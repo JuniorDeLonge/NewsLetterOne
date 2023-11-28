@@ -39,6 +39,15 @@ body {
     font-weight: 700;
 }
 
+form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
 /* Container do Formulário */
 .form-container {
     max-width: 800px;
@@ -90,7 +99,7 @@ body {
 }
 
 .terms-link:hover {
-    color: #e2e2e2;
+    color: #00c7bd;
 }
 
 /* Estilos dos Parágrafos */
@@ -99,6 +108,23 @@ body {
     font-size: 1rem;
     color: #e2e2e2;
     font-weight: 300;
+}
+
+/* Adicione estas regras no seu CSS */
+.submit-button {
+    height: 63px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+}
+
+.svg-icon {
+    display: block;
+    width: 24px; /* Ajuste o tamanho conforme necessário */
+    height: 24px; /* Ajuste o tamanho conforme necessário */
+    fill: currentColor; /* Mantém a cor atual do texto do botão */
 }
 
 /* Adicione as seguintes regras dentro da sua media query para dispositivos móveis */
