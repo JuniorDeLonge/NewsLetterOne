@@ -1,0 +1,118 @@
+/* Importação da Fonte do Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+/* Reset de Estilos Padrão e Estilos Globais */
+body {
+    font-family: "Ubuntu", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+/* Layout da Página e Container Principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Adicionado preenchimento para desktop */
+}
+
+/* Seção Principal da Página */
+.section {
+    background: linear-gradient(to bottom, #0c0c0c, #070a09);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Estilos do Texto com Gradiente */
+.bg-gradient {
+    background: linear-gradient(to right, #38fff5, #4affab);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 4rem;
+}
+
+/* Container do Formulário */
+.form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estilos do Input do Formulário */
+.form-input {
+    width: 70%;
+    height: 43px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #e2e2e2;
+    background-color: #201f1f;
+    font-size: 1rem;
+}
+
+/* Estilos do Botão de Envio do Formulário */
+.submit-button {
+    width: 20%;
+    height: 63px;
+    background-color: #38fff5;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.submit-button:hover {
+    background-color: #4affab;
+}
+
+/* Estilos do Link dos Termos e Condições */
+.terms-link {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.terms-link:hover {
+    color: #ddd;
+}
+
+/* Estilos dos Parágrafos */
+.p-email-1,
+.p-email-2 {
+    font-size: 1rem;
+}
+
+/* Adicione as seguintes regras dentro da sua media query para dispositivos móveis */
+@media only screen and (max-width: 600px) {
+    .container {
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+    .bg-gradient {
+        font-size: 3rem;
+    }
+
+    .form-container {
+        max-width: 100%;
+    }
+
+    .form-input,
+    .submit-button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
