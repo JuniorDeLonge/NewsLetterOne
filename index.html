@@ -10,19 +10,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
 
     <!-- Título da Página -->
-    <title>Email | @juniordelonge</title>
+    <title>E-mail | @juniordelonge</title>
 
     <!-- Link para a Folha de Estilos -->
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Favicon (substitua favicon.ico pelo seu arquivo real de favicon) -->
     <link rel="icon" href="img/icon-email.png">
-
-    <!-- CSS Crítico (para melhorar o desempenho do carregamento da página) -->
-    <!-- Coloque isso no head do seu HTML e considere inserir o código CSS real diretamente aqui -->
-    <style>
-        /* Seus estilos CSS críticos aqui */
-    </style>
 </head>
 
 <body>
@@ -56,30 +50,8 @@
         </div>
     </section>
 
-    <!-- Adicione esta linha antes do fechamento da tag </head> -->
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<!-- Atualize esta parte do script jQuery -->
-<script>
-    $(document).ready(function () {
-        $(".submit-button").on("click", function () {
-            // Remove o conteúdo atual do botão
-            $(this).empty();
-
-            // Adiciona o ícone SVG ao botão com a classe svg-icon
-            $(this).append(`
-                <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                    <path d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
-                </svg>
-            `);
-
-            // Adiciona uma classe para estilizar o botão após o clique (opcional)
-            $(this).addClass("success-button");
-        });
-    });
-</script>
-
-
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

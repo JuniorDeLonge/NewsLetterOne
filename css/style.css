@@ -35,7 +35,7 @@ body {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 700;
 }
 
@@ -108,14 +108,14 @@ form {
 /* Estilos do Link dos Termos e Condições */
 .terms-link {
     text-decoration: underline;
-    color: #e2e2e2;
-    font-weight: 300;
+    color: #00c7bd;
+    font-size: .9rem;
     cursor: pointer; /* Adicionado cursor pointer */
     transition: color 0.3s ease; /* Adicionada transição suave de cor */
 }
 
 .terms-link:hover {
-    color: #00c7bd;
+    color: #00e279;
 }
 
 /* Estilos dos Parágrafos */
