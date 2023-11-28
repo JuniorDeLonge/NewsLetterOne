@@ -8,6 +8,7 @@ body {
     box-sizing: border-box;
     font-family: "Ubuntu", sans-serif;
     background-color: #02030a;
+    min-height: 100vh; /* Altura mínima do corpo */
 }
 
 /* Layout da Página e Container Principal */
@@ -26,7 +27,6 @@ body {
     align-items: center;
     text-align: center;
     height: 100vh;
-    margin: 0;
 }
 
 /* Estilos do Texto com Gradiente */
@@ -46,6 +46,7 @@ form {
     align-content: center;
     justify-content: space-evenly;
     align-items: stretch;
+    padding: 20px; /* Adicionado espaçamento interno ao formulário */
 }
 
 /* Container do Formulário */
@@ -76,8 +77,12 @@ form {
 
 /* Estilos do Botão de Envio do Formulário */
 .submit-button {
-    width: 20%;
     height: 63px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
     background-color: #00c7bd;
     color: #000;
     border: none;
@@ -91,11 +96,22 @@ form {
     background-color: #00e279;
 }
 
+/* Adicionado ícone e texto oculto ao botão de envio */
+.submit-button .svg-icon {
+    margin-right: 5px;
+}
+
+.submit-button span {
+    display: none;
+}
+
 /* Estilos do Link dos Termos e Condições */
 .terms-link {
     text-decoration: underline;
     color: #e2e2e2;
     font-weight: 300;
+    cursor: pointer; /* Adicionado cursor pointer */
+    transition: color 0.3s ease; /* Adicionada transição suave de cor */
 }
 
 .terms-link:hover {
@@ -108,26 +124,10 @@ form {
     font-size: 1rem;
     color: #e2e2e2;
     font-weight: 300;
+    margin-bottom: 10px; /* Adicionado espaçamento entre os parágrafos */
 }
 
 /* Adicione estas regras no seu CSS */
-.submit-button {
-    height: 63px;
-    padding: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 20%;
-}
-
-.svg-icon {
-    display: block;
-    width: 24px; /* Ajuste o tamanho conforme necessário */
-    height: 24px; /* Ajuste o tamanho conforme necessário */
-    fill: currentColor; /* Mantém a cor atual do texto do botão */
-}
-
-/* Adicione as seguintes regras dentro da sua media query para dispositivos móveis */
 @media only screen and (max-width: 600px) {
     .container {
         max-width: 300px;
@@ -147,5 +147,6 @@ form {
     .submit-button {
         width: 100%;
         box-sizing: border-box;
+        margin-bottom: 10px; /* Adicionado espaçamento entre os elementos */
     }
 }
