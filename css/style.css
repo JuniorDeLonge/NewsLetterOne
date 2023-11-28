@@ -7,6 +7,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: "Ubuntu", sans-serif;
+    background-color: #02030a;
 }
 
 /* Layout da Página e Container Principal */
@@ -18,7 +19,7 @@ body {
 
 /* Seção Principal da Página */
 .section {
-    background: linear-gradient(to bottom, #0b0c0c, #040008);
+    background: linear-gradient(to bottom, #060210, #02030a);
     display: flex;
     flex-direction: column;
     justify-content: center;
